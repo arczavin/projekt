@@ -1,0 +1,129 @@
+#img_2{
+	max-width: 100%;
+    position:absolute;
+  top:0%;
+  left:0%;
+}
+#container{
+  position: absolute;
+  top:7%;
+  left:7%;
+  opacity:0.7;
+}
+
+
+
+/* Container */
+.container {
+
+  max-width: 33%;
+  width: 100%;
+  margin: 0 auto 5%;
+
+}
+
+
+/* Card obramowanie*/
+.card { 
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 6% 5% 4% 9%;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card:first-child {
+  background: #fafafa;
+  height: 1%;
+  border-radius: 5px 5px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+.card .title {
+  position: relative;
+  z-index: 1;
+  border-left: 2% solid #ed2553;
+  margin: 0 0 3%;
+  padding: 1% 0% 1% 5%;
+  color: #fe6e32 ;
+  font-size: 200%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card .input-container {
+  position: relative;
+  margin: 0 6% 5%;
+}
+
+
+
+
+
+body { font-family: Arial, Helvetica, Verdana, sans-serif; }
+
+#space{
+  margin-left:3%;
+}
+
+ul {
+    margin-bottom: 14px;
+    list-style: none;
+}
+li { width: 100%; height: 10%;  margin: 0 2% 5% -3%; }
+
+
+
+.orange { border-left: 6px solid #F5876E; }
+
+.blue{ border-left: 6px solid #61A8DC; }
+
+.green{ border-left: 6px solid #8EBD40; }
+
+.purple { border-left: 6px solid #988CC3; }
+
+.gold { border-left: 6px solid #D8C86E; }
+
+.yellow { border-left: 6px solid #ebe932; }
+
+.pink { border-left: 5px solid #eb32d7; }
+
+.brown { border-left: 5px solid #ba6921; }
+
+.grey { border-left: 5px solid #9d9a97; }
+
+.red { border-left: 5px solid #fe0b1c; }
+
+
+@-webkit-keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+}
+@keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1400px){
+.container {
+
+  max-width: 50%;
+  width: 100%;
+  margin: 0 auto 5%;
+
+}
+
+#container{
+  position: absolute;
+  top:3%;
+  left:2%;
+  opacity:0.7;
+}
+li { width: 100%; height: 10%;  margin: 0 1% 2% -2%; }
+
+}

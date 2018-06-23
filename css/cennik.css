@@ -1,0 +1,103 @@
+
+#img4{
+ 	max-width:100%;
+ 	position:absolute;
+ 	top:0%;
+ 	left:0%;
+} 
+
+#cennik {
+		margin:0 auto;
+		text-align: center;
+		width: 60%; 
+		zoom: 1;
+		position:absolute;
+		top:20%;
+		left:20%;
+	}
+
+
+	#cennik .plan {
+		font: 13px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;     
+		background: #fff;      
+		border: 1px solid #ddd;
+		color: #333;
+		padding: 2%;
+		width: 19%;
+		float: left;
+		position: relative;
+		margin: 0 5px;
+		-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);		
+	}
+
+	
+	
+	
+	#cennik .header {
+		position: relative;
+		font-size: 130%;
+		font-weight: normal;
+		text-transform: uppercase;
+		padding: 5%;
+		margin: -1% -1% 2% 2%;
+		border-bottom: 8px solid;
+		background-color: #eee;
+		background-image: -moz-linear-gradient(#fff,#eee);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+		background-image: -webkit-linear-gradient(#fff, #eee);
+		background-image: -o-linear-gradient(#fff, #eee);
+		background-image: -ms-linear-gradient(#fff, #eee);
+		background-image: linear-gradient(#fff, #eee);
+	}
+
+
+	
+	#cennik .popular-plan .header {
+		margin-top: -40px;
+		padding-top: 60px;		
+	}
+
+	#cennik .plan1 .header{
+		border-bottom-color: #B3E03F;
+	}
+
+	#cennik .plan2 .header{
+		border-bottom-color: #7BD553;
+	}
+
+	#cennik .plan3 .header{
+		border-bottom-color: #3AD5A0;
+	}
+
+	#cennik .plan4 .header{
+		border-bottom-color: #45D0DA;
+	}			
+	
+	/* --------------- */
+
+	#cennik .price{
+		font-size: 45px;
+	}
+
+	#cennik .monthly{
+		font-size: 13px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color: #999;
+	}
+
+	/* --------------- */
+
+	#cennik ul {
+		margin: 20px 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	#cennik li {
+		padding: 10px 0;
+	}
+	
+	/* --------------- */

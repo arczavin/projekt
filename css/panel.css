@@ -1,0 +1,47 @@
+#img9{
+ 	max-width:100%;
+ 	position:absolute;
+ 	top:0%;
+ 	left:0%;
+} 
+
+#img10{
+ 	max-width:100%;
+ 	position:absolute;
+ 	top:0%;
+ 	left:0%;
+} 
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20%;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #ed2553;
+}
+
+menu{
+	position:absolute;
+	top:4%;
+	right:10%;
+
+}
