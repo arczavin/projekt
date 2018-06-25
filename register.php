@@ -15,7 +15,7 @@
 
 	    if($stmt->rowCount() > 0){
 	        return false;
-	    } 
+	    }
 	    	else {
 	    	return true;
 	    	}
@@ -24,7 +24,6 @@
 
 
 	if(empty($_POST['imie']) || empty($_POST['nazwisko']) || empty($_POST['login']) || empty($_POST['haslo']) || empty($_POST['haslo2'])) {
-            echo '<p>Musisz wypełnić wszystkie pola.</p>';
     }
 
         elseif ($_POST['haslo']!=$_POST['haslo2']){
@@ -45,15 +44,15 @@
 
 		if($wynik) {
 			echo "Zostałeś poprawnie zarejestrowany";
-		} 
+		}
 
 			else {
 			echo "Błąd -> coś poszło nie tak. Przejdź do strony głównej aby spróbować jeszcze raz";
 			}
-	} 
+	}
 
 	else {
-		echo "Mamy tego typa!";
+		echo "Mamy już takiego typa!";
 	}
 }
 
@@ -61,11 +60,6 @@
 <html>
 <body>
 	<br>
-	<a href="index.html">Przejdź do strony głównej </a>
+	<a href="index.html">Przejdź do strony logowania</a>
 </body>
 </html>
-
-
-
-
-

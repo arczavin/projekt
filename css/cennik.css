@@ -1,3 +1,10 @@
+html, body {
+  background: url("../img/img4.png") center fixed;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
+}
 
 #img4{
  	max-width:100%;
@@ -7,10 +14,9 @@
 }
 
 #cennik {
-		margin:0 auto;
+		margin: auto;
 		text-align: center;
 		width: 60%;
-		zoom: 1;
 		position:absolute;
 		top:20%;
 		left:20%;
@@ -18,22 +24,18 @@
 
 
 	#cennik .plan {
-		font: 13px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+		font: 10px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
 		background: #fff;
-		border: 1px solid #ddd;
+		border: 2px solid #ddd;
 		color: #333;
 		padding: 2%;
-		width: 19%;
-		float: left;
-		position: relative;
-		margin: 0 5px;
+		width: 20%;
+    float: left;
+		margin: 1px;
 		-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
 		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
 		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
 	}
-
-
-
 
 	#cennik .header {
 		position: relative;
@@ -41,11 +43,9 @@
 		font-weight: normal;
 		text-transform: uppercase;
 		padding: 5%;
-		margin: -1% -1% 2% 2%;
 		border-bottom: 8px solid;
 		background-color: #eee;
 		background-image: -moz-linear-gradient(#fff,#eee);
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
 		background-image: -webkit-linear-gradient(#fff, #eee);
 		background-image: -o-linear-gradient(#fff, #eee);
 		background-image: -ms-linear-gradient(#fff, #eee);
@@ -54,18 +54,22 @@
 
 	#cennik .plan1 .header{
 		border-bottom-color: #B3E03F;
+    margin: 10px;
 	}
 
 	#cennik .plan2 .header{
 		border-bottom-color: #7BD553;
+    margin: 10px;
 	}
 
 	#cennik .plan3 .header{
 		border-bottom-color: #3AD5A0;
+    margin: 10px;
 	}
 
 	#cennik .plan4 .header{
 		border-bottom-color: #45D0DA;
+    margin: 10px;
 	}
 
 	/* --------------- */

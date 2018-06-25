@@ -1,3 +1,11 @@
+html, body {
+  background: url("../img/img2.png") center fixed;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
+}
+
 #img_2{
 	max-width: 100%;
     position:absolute;
@@ -24,7 +32,7 @@
 
 
 /* Card obramowanie*/
-.card { 
+.card {
   position: relative;
   background: #ffffff;
   border-radius: 5px;

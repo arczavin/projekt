@@ -14,10 +14,7 @@
 
 
 
-    
- 
 <body>
- <img src="img/girl_gym.png" id="girl_gym">
 
 <div id="formularz">
 <div id="container" class="container">
@@ -60,12 +57,12 @@
 
       <div class="button-container">
         <button type="submit" id="but_ok"><span>Ok!</span></button>
-        <button type="reset" id="but_reset"><span>Wyczyść!</span></button>	
+        <button type="reset" id="but_reset"><span>Wyczyść!</span></button>
       </div>
 
     </form>
   </div>
-   
+
 </div>
 
 </div>

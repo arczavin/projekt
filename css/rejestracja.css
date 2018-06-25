@@ -1,10 +1,16 @@
 
+html, body {
+  background: url("../img/girl_gym.png") center fixed;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
+}
+
 #girl_gym{
  	max-width: 100%;
 
-
-
-} 
+}
 #but_ok{
 	width:100%;
 	margin-bottom: 1%
@@ -137,11 +143,10 @@
 .card .title {
   position: relative;
   z-index: 1;
-  border-left: 2% solid #ed2553;
   margin: 0 0 3%;
   padding: 1% 0% 1% 5%;
   color: #ed2553;
-  font-size: 200%;
+  font-size: 150%;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -294,7 +299,7 @@
   border-radius: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #ffffff;
-  font-size: 58px;
+  font-size: 60px;
   line-height: 140px;
   text-align: center;
   cursor: pointer;
@@ -323,8 +328,7 @@
   right: 60px;
   display: inline;
   color: #ffffff;
-  font-size: 58px;
-  font-weight: 400;
+  font-size: 60px;
 }
 .card.alt .title .close:before {
   content: '\00d7';
@@ -375,4 +379,3 @@
     opacity: 0;
   }
 }
-

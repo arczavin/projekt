@@ -2,10 +2,6 @@
 	include_once 'check.php';
 	$sesja = new Sesja();
 	$sesja->only_for_superuser();
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -15,31 +11,21 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/dodaj.css" />
 <title>Fitness 4 you</title>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />  
-<link rel="stylesheet" href="/resources/demos/style.css">  
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="http://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.js"></script> 
-    <script src="http://dnpwc.gov.np/application/resources/admin/plugins/jquery-ui-timepicker-addon/jquery-ui-timepicker-addon.min.js"></script>  
- 
- 
-
-
-
+    <script src="http://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.js"></script>
+    <script src="http://dnpwc.gov.np/application/resources/admin/plugins/jquery-ui-timepicker-addon/jquery-ui-timepicker-addon.min.js"></script>
 
   <script>
-  $(function datepicker() {
+  	$(function datepicker()) {
     $( "#datepicker" ).datepicker({format: 'yyyy-mm-dd'});
+	}
 
-  
-
-
-    $(function timepicker() {
+    $(function timepicker()) {
     $( "#timepicker" ).timepicker();
     $( "#timepicker2" ).timepicker();
-  });
-
-
+  }
   </script>
 
 
@@ -47,11 +33,10 @@
 
 
 <body>
-<img src="img/img10.png" id="img10">
 
 <menu>
-  	<ul>
-	<li><a href="dodaj.php" id="grafik">DODAJ ZAJĘCIA</a></li> 
+	<ul>
+	<li><a href="dodaj.php" id="grafik">DODAJ ZAJĘCIA</a></li>
 	<li><a href="moje_ins.php" id="info">MOJE ZAJĘCIA</a></li>
 	<li><a href="zm_haslo.php" id="cennik">ZMIEŃ HASŁO</a></li>
   <li><a href="logout.php" id="logout">WYLOGUJ</a></li>
@@ -81,7 +66,7 @@
 
 
       <div class="input-container">
-      <input type="text" list="sala" name="sala" required="required"> 
+      <input type="text" list="sala" name="sala" required="required">
           <datalist id="sala">
               <option value="S1">
               <option value="S2">
@@ -94,7 +79,7 @@
 
 
       <div class="input-container">
-      <input type="text" list="nazwa_zaj" name="nazwa_zaj" required="required"> 
+      <input type="text" list="nazwa_zaj" name="nazwa_zaj" required="required">
           <datalist id="nazwa_zaj">
               <option value="Zumba dla dzieci">
               <option value="Pilates">
@@ -110,7 +95,7 @@
 
 
        <div class="input-container" data-date-format="yyyy/mm/dd">
-        <input type="date" id="datepicker" name="datepicker" required="required"/> 
+        <input type="date" id="datepicker" name="datepicker" required="required"/>
         <label for="datepicker">data</label>
         <div class="bar"></div>
       </div>
@@ -118,9 +103,9 @@
         <button onClick="md5Generator()"><span>Go!</span></button>
       </div>
     </form>
-  
 
-<Br>
+
+<br>
 
 
 

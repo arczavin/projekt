@@ -1,3 +1,10 @@
+html, body {
+  background: url("../img/img5.png") center fixed;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
+}
 #img5{
 	max-width: 100%;
 	position:absolute;
