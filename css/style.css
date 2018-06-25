@@ -4,21 +4,21 @@
     position:absolute;
   top:0%;
   left:0%;
-} 
+}
 
 #img3{
   width:35%;
   position:absolute;
   top:4%;
   left: 0%;
-} 
+}
 
 #img4{
   width:30%;
   position:absolute;
   top:60%;
   left: 1%;
-} 
+}
 
 
 
@@ -290,7 +290,7 @@ menu{
   opacity: 0;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  
+
 }
 .card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
   border-color: #ed2553;
@@ -457,4 +457,3 @@ menu{
     opacity: 0;
   }
 }
-

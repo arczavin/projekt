@@ -19,7 +19,7 @@
 	<div class="container">
     	<div class="content">
         	<h1>Gale<span class="lightgrey">ria</span> <br /><span class="light"></span></h1>
-        
+
 
             <div id="toolbar"></div><div class="clear"></div>
             <a href="img/img6.png" class="thumb_link"><span class="selected"></span><img src="img/img6a.png" class="thumb" /></a>
@@ -27,21 +27,20 @@
             <a href="img/img7.png" class="thumb_link"><span class="selected"></span><img src="img/img7a.png"  class="thumb" /></a>
 
             <a href="img/img8.png" class="thumb_link"><span class="selected"></span><img src="img/img8a.png"  class="thumb" /></a>
-            
+
         </div>
 	</div>
 </div>
 </div>
 <div id="bg">
     <img src="img/img6a.png" id="bgimg" />
-	<div id="preloader"><img src="ajax-loader_dark.gif" width="32" height="32" align="absmiddle" />Ładuję...</div>
-    <div id="arrow_indicator" title="otwórz palen boczny"><img src="sw_arrow_indicator.png" width="50" height="50" alt="otwórz panel boczny" /></div>
-    <div id="nextimage_tip">Następny</div>
+	<div id="preloader">Ładuję...</div>
+    <div id="arrow_indicator" title="panel boczny">OTWÓRZ PANEL BOCZNY</div>
 </div>
 <script>
 
 
-	$defaultViewMode="full"; 
+	$defaultViewMode="full";
 	$bg=$("#bg");
 	$bgimg=$("#bg #bgimg");
 	$preloader=$("#preloader");
@@ -49,42 +48,42 @@
 	$outer_container_a=$("#outer_container a.thumb_link");
 	$toolbar=$("#toolbar");
 	$nextimage_tip=$("#nextimage_tip");
-	
+
 $(window).load(function() {
 	$toolbar.data("imageViewMode",$defaultViewMode); //default view mode
 	ImageViewMode($toolbar.data("imageViewMode"));
 	//cache vars
 	$customScrollBox=$("#customScrollBox");
 	$customScrollBox_container=$("#customScrollBox .container");
-	
+
 	$customScrollBox.height($customScrollBox_container.height());
 
 	//resize browser window functions
 	$(window).resize(function() {
-		FullScreenBackground("#bgimg"); 
+		FullScreenBackground("#bgimg");
 	});
-	
+
 	LargeImageLoad($bgimg);
 });
-	
+
 
 	$bgimg.load(function() {
 		LargeImageLoad($(this));
 	});
-	
+
 	function LargeImageLoad($this){
-		$preloader.fadeOut("fast"); 
-		$this.removeAttr("width").removeAttr("height").css({ width: "", height: "" }); 
+		$preloader.fadeOut("fast");
+		$this.removeAttr("width").removeAttr("height").css({ width: "", height: "" });
 		$bg.data("originalImageWidth",$this.width()).data("originalImageHeight",$this.height());
 		if($bg.data("newTitle")){
-			$this.attr("title",$bg.data("newTitle")); 
+			$this.attr("title",$bg.data("newTitle"));
 		}
-		FullScreenBackground($this); 
-		$bg.data("nextImage",$($outer_container.data("selectedThumb")).next().attr("href")); 
+		FullScreenBackground($this);
+		$bg.data("nextImage",$($outer_container.data("selectedThumb")).next().attr("href"));
 		if(typeof itemIndex!="undefined"){
-			if(itemIndex==lastItemIndex){ 
+			if(itemIndex==lastItemIndex){
 				$bg.data("lastImageReached","Y");
-				$bg.data("nextImage",$outer_container_a.first().attr("href")); 
+				$bg.data("nextImage",$outer_container_a.first().attr("href"));
 			} else {
 				$bg.data("lastImageReached","N");
 			}
@@ -107,13 +106,13 @@ $(window).load(function() {
 			SlidePanels("close");
 		}
 	);
-	
+
 	$("#arrow_indicator").click(
 		function(){ //mouse over
 			SlidePanels("open");
 		}
 	);
-	
+
 	//Clicking on thumbnail changes the background image
 	$outer_container_a.click(function(event){
 		event.preventDefault();
@@ -125,14 +124,14 @@ $(window).load(function() {
     		$(this).children(".selected").css("display","none");
   		});
 		$(this).children(".selected").css("display","block");
-		//get and store next image and selected thumb 
-		$outer_container.data("selectedThumb",$this); 
-		$bg.data("nextImage",$(this).next().attr("href")); 	
+		//get and store next image and selected thumb
+		$outer_container.data("selectedThumb",$this);
+		$bg.data("nextImage",$(this).next().attr("href"));
 		$bg.data("newTitle",$(this).children("img").attr("title")); //get and store new image title attribute
 		itemIndex=getIndex($this); //get clicked item index
 		lastItemIndex=($outer_container_a.length)-1; //get last item index
 		$bgimg.attr("src", "").attr("src", $this); //switch image
-	}); 
+	});
 
 	//clicking on large image loads the next one
 	$bgimg.click(function(event){
@@ -149,9 +148,9 @@ $(window).load(function() {
 			//store new selected thumb
 			var selThumb=$outer_container.data("selectedThumb");
 			if($bg.data("lastImageReached")!="Y"){
-				$outer_container.data("selectedThumb",$(selThumb).next()); 
+				$outer_container.data("selectedThumb",$(selThumb).next());
 			} else {
-				$outer_container.data("selectedThumb",$outer_container_a.first()); 
+				$outer_container.data("selectedThumb",$outer_container_a.first());
 			}
 			$bg.data("newTitle",$($outer_container.data("selectedThumb")).children("img").attr("title")); //get and store new image title attribute
 			if($bg.data("lastImageReached")!="Y"){
@@ -162,7 +161,7 @@ $(window).load(function() {
 			$this.attr("src", "").attr("src", $bg.data("nextImage")); //switch image
 		}
 	});
-	
+
 	//function to get element index (fuck you IE!)
 	function getIndex(theItem){
 		for ( var i = 0, length = $outer_container_a.length; i < length; i++ ) {
@@ -171,7 +170,7 @@ $(window).load(function() {
 			}
 		}
 	}
-	
+
 	//toolbar (image view mode button) hover
 	$toolbar.hover(
 		function(){ //mouse over
@@ -180,9 +179,9 @@ $(window).load(function() {
 		function(){ //mouse out
 			$(this).stop().fadeTo("fast",0.8);
 		}
-	); 
+	);
 	$toolbar.stop().fadeTo("fast",0.8); //set its original state
-	
+
 	//Clicking on toolbar changes the image view mode
 	$toolbar.click(function(event){
 		if($toolbar.data("imageViewMode")=="full"){

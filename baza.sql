@@ -1,12 +1,13 @@
 /*
 Navicat MySQL Data Transfer
 Source Host     : localhost:3306
-Source Database : jpawlis_baza
+Source Database : inz
 Target Host     : localhost:3306
-Target Database : jpawlis_baza
+Target Database : inz
 Date: 2015-06-28 13:48:18
 */
-
+ALTER TABLE harmonogram
+ADD 
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for harmonogram
@@ -17,7 +18,7 @@ CREATE TABLE `harmonogram` (
   `godz_start` time NOT NULL,
   `godz_stop` time NOT NULL,
   `id_sala` int(11) NOT NULL,
-  `id_prowadzacy` int(11) NOT NULL,
+  `id_prowadzacy` int(11) NOT NUL
   `id_tanca` int(11) NOT NULL,
   PRIMARY KEY (`id_zajec`),
   KEY `fk1` (`id_sala`),

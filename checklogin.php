@@ -19,8 +19,17 @@
         $hash = md5($date_string . $wynik['id_uzytkownika']);//łącze 2 stringi dzisiejszą date i id uzytkownika i zapisuję przez md5
         $ip = $_SERVER['REMOTE_ADDR'];
         $browser = $_SERVER[HTTP_USER_AGENT];
-
-
+		echo "<br>";
+		var_dump($date);
+		echo "<br>";
+		var_dump($date_string);
+		echo "<br>";
+		var_dump($hash);
+		echo "<br>";
+		var_dump($ip);
+		echo "<br>";
+		var_dump($browser);
+		echo "<br>";
         $sql = 'INSERT INTO sesja VALUES(NULL, :user_id, now(), :hash, :adres_ip, :przegladarka)';
         $query = $db->prepare($sql);
         $result = $query -> execute(array(
@@ -28,7 +37,9 @@
             ':hash' => $hash,
             ':adres_ip' => $ip,
             ':przegladarka' => $browser
-        ));
+			));
+		echo "<br>";
+			var_dump($result);
 
         if ($result) {
             setcookie("tajne_dane", $hash, time()+3600);
@@ -44,5 +55,5 @@
     } else {
         echo("nie pykło");
     }
-
+var_dump($result);
 ?>

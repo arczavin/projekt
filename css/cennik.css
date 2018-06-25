@@ -4,12 +4,12 @@
  	position:absolute;
  	top:0%;
  	left:0%;
-} 
+}
 
 #cennik {
 		margin:0 auto;
 		text-align: center;
-		width: 60%; 
+		width: 60%;
 		zoom: 1;
 		position:absolute;
 		top:20%;
@@ -18,8 +18,8 @@
 
 
 	#cennik .plan {
-		font: 13px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;     
-		background: #fff;      
+		font: 13px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+		background: #fff;
 		border: 1px solid #ddd;
 		color: #333;
 		padding: 2%;
@@ -29,12 +29,12 @@
 		margin: 0 5px;
 		-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
 		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
-		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);		
+		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
 	}
 
-	
-	
-	
+
+
+
 	#cennik .header {
 		position: relative;
 		font-size: 130%;
@@ -45,18 +45,11 @@
 		border-bottom: 8px solid;
 		background-color: #eee;
 		background-image: -moz-linear-gradient(#fff,#eee);
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
 		background-image: -webkit-linear-gradient(#fff, #eee);
 		background-image: -o-linear-gradient(#fff, #eee);
 		background-image: -ms-linear-gradient(#fff, #eee);
 		background-image: linear-gradient(#fff, #eee);
-	}
-
-
-	
-	#cennik .popular-plan .header {
-		margin-top: -40px;
-		padding-top: 60px;		
 	}
 
 	#cennik .plan1 .header{
@@ -73,8 +66,8 @@
 
 	#cennik .plan4 .header{
 		border-bottom-color: #45D0DA;
-	}			
-	
+	}
+
 	/* --------------- */
 
 	#cennik .price{
@@ -99,5 +92,5 @@
 	#cennik li {
 		padding: 10px 0;
 	}
-	
+
 	/* --------------- */
