@@ -1,25 +1,10 @@
 html, body {
-  background: url("../img/img10.png") center fixed;
+  background: url("../img/girl.png") center fixed;
   -webkit-background-size: cover; /* For WebKit*/
   -moz-background-size: cover;    /* Mozilla*/
   -o-background-size: cover;      /* Opera*/
   background-size: cover;         /* Generic*/
 }
-
-#img9{
- 	max-width:100%;
- 	position:absolute;
- 	top:0%;
- 	left:0%;
-}
-
-#img10{
- 	max-width:100%;
- 	position:absolute;
- 	top:0%;
- 	left:0%;
-}
-
 #z7{
 	position:absolute;
 	top:25%;

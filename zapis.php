@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once 'check.php';
 $sesja = new Sesja();
 
@@ -24,13 +24,9 @@ if(isset($_POST['id_zajec'])) {
   } else {
     echo "Błąd -> coś poszło nie tak. Przejdź do strony głównej aby spróbować jeszcze raz";
   }
-}           
-    
+}
 
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -39,7 +35,7 @@ if(isset($_POST['id_zajec'])) {
 <link rel="stylesheet" href="css/moje.css" />
 
 
-<?php 
+<?php
 
 $q->execute(array(
   ':id_uzytkownika' => $sesja->object['id_uzytkownika']
@@ -48,15 +44,15 @@ $q->execute(array(
 ?>
 <menu>
     <ul>
-  <li><a href="zapis.php" id="grafik">ZAPISY</a></li> 
+  <li><a href="zapis.php" id="grafik">ZAPISY</a></li>
   <li><a href="moje.php" id="info">MOJE ZAJĘCIA</a></li>
   <li><a href="zm_haslo_u.php" id="cennik">ZMIEŃ HASŁO</a></li>
-  <li><a href="szukaj.php" id="kontakt">WYSZUKAJ</a></li>
+  <li><a href="wyszukaj.php" id="kontakt">WYSZUKAJ</a></li>
    <li><a href="logout.php" id="logout">WYLOGUJ</a></li>
   </ul>
 </menu>
-  
- 
+
+
 <div  class="tbl-header">
 <table cellpadding="0" cellspacing="0" border="0">
   <thead>
@@ -78,7 +74,7 @@ $q->execute(array(
 
   <?php while ($r = $q->fetch()): ?>
   <tr>
-    <td><?php echo htmlspecialchars ($r['nazwa'])?></td>  
+    <td><?php echo htmlspecialchars ($r['nazwa'])?></td>
     <td><?php echo htmlspecialchars ($r['godz_start'])?></td>
     <td><?php echo htmlspecialchars ($r['godz_stop'])?></td>
     <td><?php echo htmlspecialchars ($r['nazwa_s'])?></td>
@@ -88,13 +84,11 @@ $q->execute(array(
           <div class="button-container">
           <input type="hidden" value="<?php echo $r['id_zajec']?>" name="id_zajec">
           <button>Go!</span></button>
-          </div> 
+          </div>
           </form>
           </td>
   </tr>
 
-
-  
 
 <?php endwhile; ?>
 

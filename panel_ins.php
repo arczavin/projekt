@@ -1,4 +1,9 @@
+<?php
+	include_once 'check.php';
+	$sesja = new Sesja();
+	$sesja->only_for_superuser();
 
+?>
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -13,14 +18,10 @@
 
 
 <body>
-<img src="img/img10.png" id="img10">
-
-
-
 
 <menu>
   	<ul>
-	<li><a href="dodaj.php" id="grafik">DODAJ ZAJĘCIA</a></li> 
+	<li><a href="dodaj.php" id="grafik">DODAJ ZAJĘCIA</a></li>
 	<li><a href="moje_ins.php" id="info">MOJE ZAJĘCIA</a></li>
 	<li><a href="zm_haslo.php" id="cennik">ZMIEŃ HASŁO</a></li>
 	<li><a href="logout.php" id="logout">WYLOGUJ</a></li>

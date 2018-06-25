@@ -42,23 +42,19 @@ if(isset($_POST['pass_old']) && isset($_POST['pass']) && isset($_POST['pass2']))
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
 
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/dodaj.css" />
+<link rel="stylesheet" href="css/zm_haslo.css" />
 <title>Fitness 4 you</title>
 </head>
 
 
-<img src="img/img9.png" id="img10">
-
-
 <menu>
     <ul>
-  <li><a href="dodaj.php" id="grafik">DODAJ ZAJĘCIA</a></li> 
+  <li><a href="dodaj.php" id="grafik">DODAJ ZAJĘCIA</a></li>
   <li><a href="moje_ins.php" id="info">MOJE ZAJĘCIA</a></li>
   <li><a href="zm_haslo.php" id="cennik">ZMIEŃ HASŁO</a></li>
   <li><a href="logout.php" id="logout">WYLOGUJ</a></li>

@@ -1,3 +1,11 @@
+html, body {
+  background: url("../img/girl.png") center fixed;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
+}
+
 #img16 {  max-width:100%;
   position:absolute;
   top:0%;
@@ -40,7 +48,7 @@ h1.main {
 }
 
 table {
-    font-family: "Lato","sans-serif"; 
+    font-family: "Lato","sans-serif";
     position:absolute;
     top: 18%;
     right:20%;
@@ -50,41 +58,41 @@ table {
   table caption {
     padding-bottom: 1em;    }
 
-  
+
 /* --------------TABLE ONE ATTRIBUTES-----------------  */
 
-  table.one {                  
-  margin-bottom: 3em; 
+  table.one {
+  margin-bottom: 3em;
   border-collapse:collapse;
   display: inline-block;
-  margin-right: 5em;   
+  margin-right: 5em;
   border-style: solid;
-  border-color: #6633FF ; } 
-
-  
-  table.one td {                
-  text-align: center;     
-  width: 20em;          
-  padding: 1em;    
-  border-color: #ed2553 ; }   
+  border-color: #6633FF ; }
 
 
-  table.one th {                
-  text-align: center;         
+  table.one td {
+  text-align: center;
+  width: 20em;
   padding: 1em;
-  background-color:  #333;  
-  margin: 3%;
-  border-color: #ed2553;    
-  color: white; 
-  border-color: #ed2553 ;  }           
+  border-color: #ed2553 ; }
 
-  table.one tr {  
+
+  table.one th {
+  text-align: center;
+  padding: 1em;
+  background-color:  #333;
+  margin: 3%;
+  border-color: #ed2553;
+  color: white;
+  border-color: #ed2553 ;  }
+
+  table.one tr {
   height: 1em;  }
 
-  table.one tr:nth-child(even) {      
+  table.one tr:nth-child(even) {
     background-color: #eee;   }
 
-  table.one tr:nth-child(odd) {     
+  table.one tr:nth-child(odd) {
   background-color:#fff;    }
 
 
@@ -120,12 +128,12 @@ section{
 
 ::-webkit-scrollbar {
     width: 6px;
-} 
+}
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-} 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
 ::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
 
@@ -159,8 +167,6 @@ menu{
   position:absolute;
   top:2%;
   right:10%;
-      font-family: "Lato","sans-serif"; 
+      font-family: "Lato","sans-serif";
 
 }
-
-
