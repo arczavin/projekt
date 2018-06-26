@@ -1,3 +1,4 @@
+
 <?php
 	include_once 'connection.php';
 
@@ -58,8 +59,14 @@
 
 ?>
 <html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/rejestracja.css" />
+<title>Fitness 4 you</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="Stylesheet" type="text/css" href="rejestracja.css" />
+</head>
 <body>
-	<br>
-	<a href="index.html">Przejdź do strony logowania</a>
+<button class="back" type="button" id="back" onclick="location.href='index.html'"><span>Powrót</span></button>
 </body>
 </html>

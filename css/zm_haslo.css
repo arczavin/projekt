@@ -160,9 +160,9 @@ menu{
   z-index: 1;
   border-left: 2% solid #ed2553;
   margin: 0 0 3%;
-  padding: 1% 0% 1% 5%;
+  padding: 2% 0% 2% 5%;
   color: #ed2553;
-  font-size: 200%;
+  font-size: 130%;
   font-weight: 600;
   text-transform: uppercase;
 }
