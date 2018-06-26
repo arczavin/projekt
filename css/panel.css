@@ -6,19 +6,6 @@ html, body {
   background-size: cover;         /* Generic*/
 }
 
-#img9{
- 	max-width:100%;
- 	position:absolute;
- 	top:0%;
- 	left:0%;
-}
-
-#img10{
- 	max-width:100%;
- 	position:absolute;
- 	top:0%;
- 	left:0%;
-}
 
 
 ul {
@@ -48,6 +35,7 @@ li a:hover {
 }
 
 menu{
+  font-family: "Lato","sans-serif";
 	position:absolute;
 	top:4%;
 	right:10%;
