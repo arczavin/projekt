@@ -5,26 +5,7 @@ html, body {
   -o-background-size: cover;      /* Opera*/
   background-size: cover;         /* Generic*/
 }
-#img9{
- 	max-width:100%;
- 	position:absolute;
- 	top:0%;
- 	left:0%;
-}
 
-#img10{
- 	max-width:100%;
- 	position:absolute;
- 	top:0%;
- 	left:0%;
-}
-
-#z7{
-	position:absolute;
-	top:25%;
-	right:10%;
-	max-width: 50%;
-}
 ul {
     list-style-type: none;
     margin: 0;
@@ -58,8 +39,6 @@ menu{
 
 }
 
-
-
 .pen-title {
   padding: 50px 0;
   text-align: center;
@@ -81,7 +60,6 @@ menu{
   font-weight: 600;
   text-decoration: none;
 }
-
 
 
 #container{

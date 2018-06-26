@@ -6,28 +6,6 @@ html, body {
   background-size: cover;         /* Generic*/
 }
 
-#girl{
- 	max-width:100%;
-    position:absolute;
-  top:0%;
-  left:0%;
-}
-
-#img3{
-  width:35%;
-  position:absolute;
-  top:4%;
-  left: 0%;
-}
-
-#img4{
-  width:30%;
-  position:absolute;
-  top:60%;
-  left: 1%;
-}
-
-
 
 ul {
     list-style-type: none;

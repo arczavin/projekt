@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once 'connection.php';
 
 
@@ -10,8 +10,6 @@ $sth->execute();
 
 ?>
 
-
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -22,14 +20,9 @@ $sth->execute();
 <script src="js/index_m.js"></script>
 
 
-
-
-
 <body>
 
-
-
-<h1 class="main"> harmonogram zajęć</h1>  
+<h1 class="main">harmonogram zajęć</h1>
 <div  class="tbl-header">
 <table cellpadding="0" cellspacing="0" border="0">
   <thead>
@@ -50,7 +43,7 @@ $sth->execute();
 
   <?php while ($result = $sth->fetch()): ?>
   <tr>
-    <td><?php echo htmlspecialchars ($result['nazwa'])?></td>  
+    <td><?php echo htmlspecialchars ($result['nazwa'])?></td>
     <td><?php echo htmlspecialchars ($result['godz_start'])?></td>
     <td><?php echo htmlspecialchars ($result['godz_stop'])?></td>
     <td><?php echo htmlspecialchars ($result['nazwa_s'])?></td>
