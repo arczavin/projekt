@@ -13,7 +13,7 @@ class Sesja {
 		$query = $this->db->prepare($sql);
 		$query->execute(array(
 			':hash' => $_COOKIE['tajne_dane']
-			
+	
 		));
 
 		$result = $query -> fetch();
@@ -35,7 +35,7 @@ class Sesja {
 		if ($this->object['id_typ'] == 3) {
 			header("Location: panel_ins.php");
 		}
-	}	
+	}
 }
 
 $check = new Sesja();
